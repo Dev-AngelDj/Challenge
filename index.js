@@ -2,7 +2,7 @@ function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
+    let buscando = document.getElementById("buscando");
 
     let textoCifrado = texto
         .replace(/e/gi, "enter")
@@ -15,9 +15,9 @@ function encriptar() {
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent="Texto encriptado con exito";
         parrafo.textContent="";
-        muñeco.src ="./img/encriptado.jpg";
+        buscando.src ="./img/encriptado.jpg";
     } else{
-        muñeco.src = "./img/muñeco.png";  
+        buscando.src = "./img/buscando.png";  
         tituloMensaje.textContent="Ningun mensaje fue encontrado";
         parrafo.textContent="Ingresa el texto que deseas encriptar o desencriptar";      
         swal ("Ooops!","Debes ingresar un texto","warning");       
@@ -29,7 +29,7 @@ function desencriptar(){
     let texto= document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muñeco = document.getElementById("muñeco");
+    let buscando = document.getElementById("buscando");
 
     let textoCifrado = texto
         .replace(/enter/gi, "e")
@@ -42,9 +42,9 @@ function desencriptar(){
             document.getElementById("texto").value=textoCifrado;
             tituloMensaje.textContent="Texto desencriptado con exito";
             parrafo.textContent="";
-            muñeco.src ="./img/desencriptado.jpg";
+            buscando.src ="./img/desencriptado.jpg";
         }else{
-            muñeco.src = "./img/muñeco.png";  
+            buscando.src = "./img/buscando.png";  
             tituloMensaje.textContent="Ningun mensaje fue encontrado";
             parrafo.textContent="Ingresa el texto que deseas encriptar o desencriptar";      
             swal ("Ooops!","Debes ingresar un texto","warning");        
