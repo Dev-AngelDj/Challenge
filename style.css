@@ -72,7 +72,11 @@
 }
 
 .btn-encriptar{
-    align-items: center;
+    margin: 1%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
     padding: 2%;
     gap: 8px;
@@ -87,6 +91,7 @@
 }
 
 .btn-desencriptar{
+    margin: 1%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -108,9 +113,27 @@
 
 .btn-desencriptar:hover,
 .btn-encriptar:hover {
-    margin: 0.3%;
+    margin: 1%;
     width: 24.5%;
     padding: 1.8%;    
+}
+.copiar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
 }
 
 .encriptado {
