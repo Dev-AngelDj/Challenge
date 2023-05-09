@@ -117,7 +117,7 @@
     width: 24.5%;
     padding: 1.8%;    
 }
-.copiar{
+.copy{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
