@@ -3,6 +3,7 @@ function encriptar() {
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
     let buscando = document.getElementById("buscando");
+    
 
     let textoCifrado = texto
         .replace(/e/gi, "enter")
@@ -50,4 +51,11 @@ function desencriptar(){
             swal ("Ooops!","Debes ingresar un texto","warning");        
          }
     
+}
+
+function copiar(){              
+        texto.select();
+        texto.setSelectionRange(0, 99999);
+        document.CommandId("copy");
+       
 }
