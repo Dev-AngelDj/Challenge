@@ -51,4 +51,12 @@ function desencriptar(){
             swal ("Ooops!","Debes ingresar un texto","warning");        
     }
     
-}     
+}  
+function copiar() {
+    let texto = document.getElementById("texto").value;
+    
+    navigator.clipboard.writeText(texto)
+            .then(() => {
+                alert('Texto copiado!')
+        })
+    }
